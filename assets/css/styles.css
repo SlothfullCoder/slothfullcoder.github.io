@@ -163,6 +163,23 @@ footer > .quick-links > a {
     padding: 0 5px;
 }
 
+/* Tooltip for nav button descriptions */
+.nav-desc-tooltip {
+    position: fixed;
+    background: #e3f3ff;
+    color: #222;
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 1.1rem;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.2s;
+    opacity: 0.97;
+    max-width: 250px;
+    white-space: pre-line;
+}
+
 /* Media Queries */
 @media screen and (max-width: 375px) {
     /* Adjust header */

@@ -22,12 +22,12 @@
     </header>
 
     <nav>
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='./pages/about.html'">About</button>
-        <button onclick="window.location.href='./pages/attractions.html'">Attractions</button>
-        <button onclick="window.location.href='./pages/events.html'">Events</button>
-        <button onclick="window.location.href='./pages/businesses.html'">Businesses & Services</button>
-        <button onclick="window.location.href='./pages/contact.html'">Contact</button>
+        <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='index.html'">Home</button>
+        <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='./pages/about.html'">About</button>
+        <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='./pages/attractions.html'">Attractions</button>
+        <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='./pages/events.html'">Events</button>
+        <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='./pages/businesses.html'">Businesses & Services</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='./pages/contact.html'">Contact</button>
     </nav>
 
     <main>
@@ -95,5 +95,8 @@
             <p>Contact us: this.is@placeholder.ca | (123) 456-7890</p>
         </div>
     </footer>
+
+    <div id="nav-desc-tooltip" class="nav-desc-tooltip" style="display:none;"></div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
