@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Tooltip for nav button descriptions
     const tooltip = document.getElementById('nav-desc-tooltip');
     let hoverTimer = null;
     let lastMouseX = 0;
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
                 tooltip.style.left = (lastMouseX + 15) + 'px';
                 tooltip.style.top = (lastMouseY + 15) + 'px';
-            }, 1500); // 1.5 seconds
+            }, 1500);
         });
 
         btn.addEventListener('mouseleave', () => {

@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Vavenby</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mediaQueries.css">
+    <link rel="stylesheet" href="../assets/css/page/about.css">
+    <link rel="stylesheet" href="../assets/css/textbox.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="stylesheet" href="../assets/css/bace.css">
 </head>
 <body>
-    <!-- <div id="line"></div> -->
+    <!-- Language Selector Button -->
+    <div class="language-dropdown">
+        <button id="languageBtn">English &#x25BC;</button>
+        <div id="languageMenu" class="language-menu">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="fr">Français</button>
+            <button class="lang-option" data-lang="es">Español</button>
+            <!-- Add more languages as needed -->
+        </div>
+    </div>
+
     <div class="logo-all">
         <div id="green-circal"></div>
         <div class="logo">
@@ -18,7 +36,6 @@
         <div>
             <h1>Vavenby</h1>
         </div>
-        <div></div>
     </header>
     <nav>
         <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='../index.html'">Home</button>
@@ -32,8 +49,13 @@
         <div id="main-left" class="main-side"></div>
         <div id="main-middle" class="main-content">
             <h2>About Vavenby</h2>
-            <p>Vavenby is a small, picturesque town located in British Columbia, Canada. Known for its stunning natural landscapes and friendly community, Vavenby offers a unique blend of outdoor adventures and local charm.</p>
-            <p>Whether you're exploring the nearby forests, enjoying local events, or visiting our businesses, Vavenby has something for everyone.</p>
+            <p>
+                Vavenby is a small, picturesque town located in British Columbia, Canada. Known for its stunning natural landscapes and friendly community, Vavenby offers a unique blend of outdoor adventures and local charm.
+            </p>
+            <p>
+                Whether you're exploring the nearby forests, enjoying local events, or visiting our businesses, Vavenby has something for everyone.
+            </p>
+            <!-- Add more about/history content here as needed -->
         </div>
         <div id="main-right" class="main-side"></div>
     </main>
