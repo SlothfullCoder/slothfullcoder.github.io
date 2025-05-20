@@ -21,3 +21,95 @@
     background-image: url('https://www.celebritycruises.com/blog/content/uploads/2024/06/cities-in-the-mountains-banff-canada-1024x683.jpg');
     background-position-y: -45rem;
 }
+
+/* Local News Styles */
+#localnews {
+    display: block;
+    padding: 64px 0;
+    max-width: 100vw;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.ln-container {
+    display: block;
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 3vw;
+    box-sizing: border-box;
+}
+
+.ln-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 64px;
+    margin-bottom: 24px;
+    
+}
+
+.ln-header h2 {
+    font: bolder 35px "Roboto", sans-serif;
+}
+
+.ln-header p {
+    font: bold 15px "Roboto", sans-serif;
+    color: #255f27;
+}
+
+.ln-header .nav-btn {
+    border-style: double;
+    border-color: #ececec;
+}
+
+.ln-row {
+    display: grid;
+    gap: 32px 48px;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+}
+
+.ln-row-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* default, but explicit */
+    height: 100%; /* ensures it fills the grid cell */
+    text-align: left;
+    padding-left: 24px;
+    border-left: 2px solid #388E3C;
+    position: relative;
+    transition-behavior: normal;
+    transition-duration: 0.2s;
+}
+
+.ln-item-part {
+    display: block;
+    width: calc(100vw / 6);
+}
+
+.ln-item-content {
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ln-item-title {
+    font: bolder 35px "Roboto", sans-serif;
+    color: #317c34;
+}
+
+.ln-item-text {
+    font: 400 20px "Roboto", sans-serif;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.ln-item-date,
+.ln-item-time {
+    font: bold 15px "Roboto", sans-serif;
+    color: #000;
+}
+
+.ln-item-dateNtime {
+    margin-top: auto;
+}

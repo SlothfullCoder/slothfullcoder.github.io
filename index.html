@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Vavenby</title>
+    <link rel="stylesheet" href="./assets/css/mediaQueries.css">
+    <link rel="stylesheet" href="./assets/css/page/home.css">
     <link rel="stylesheet" href="./assets/css/textbox.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/dropdown.css">
     <link rel="stylesheet" href="./assets/css/buttons.css">
     <link rel="stylesheet" href="./assets/css/bace.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/page/home.css">
-    <link rel="stylesheet" href="./assets/css/mediaQueries.css">
 </head>
 <body>
     <!-- Language Selector Button -->
@@ -49,21 +49,133 @@
     </nav>
 
     <main>
-        <div id="main-left" class="main-side"></div>
-        <div id="main-middle" class="main-content">
-            <h2>Welcome to Vavenby!</h2>
-            <p>Discover the beauty and charm of our town. Explore our attractions, events, and local businesses.</p>
-            
-            <!-- Town picture -->
-            <div id="town1" class="town-image"></div>
-
-            <!-- Intro pragraph about the town -->
-            <div class="intro-paragraph">
-                <p>Vavenby, British Columbia, is a small, rural community located along the North Thompson River in Canada. Known for its scenic beauty, Vavenby is surrounded by forests, mountains, and abundant wildlife, making it a great spot for outdoor activities like fishing, hiking, and camping. The town has a rich history tied to forestry and agriculture, with a close-knit community that values its natural surroundings. While small, Vavenby serves as a gateway to nearby Wells Gray Provincial Park and offers a peaceful lifestyle for residents and visitors alike.</p>
-                                
+        <div id="main-opener">
+            <div id="main-left" class="main-side"></div>
+            <div id="main-middle" class="main-content">
+                <h2>Welcome to Vavenby!</h2>
+                <p>Discover the beauty and charm of our town. Explore our attractions, events, and local businesses.</p>
+                
+                <!-- Town picture -->
+                <div id="town1" class="town-image"></div>
+    
+                <!-- Intro pragraph about the town -->
+                <div class="intro-paragraph">
+                    <p>Vavenby, British Columbia, is a small, rural community located along the North Thompson River in Canada. Known for its scenic beauty, Vavenby is surrounded by forests, mountains, and abundant wildlife, making it a great spot for outdoor activities like fishing, hiking, and camping. The town has a rich history tied to forestry and agriculture, with a close-knit community that values its natural surroundings. While small, Vavenby serves as a gateway to nearby Wells Gray Provincial Park and offers a peaceful lifestyle for residents and visitors alike.</p>
+                                    
+                </div>
             </div>
+            <div id="main-right" class="main-side"></div>
         </div>
-        <div id="main-right" class="main-side"></div>
+
+        <div id="localnews">
+            <div class="ln-container">
+                <div class="ln-header">
+                    <h2>Vavenby News</h2>
+                    <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='./pages/events.html'">All Events</button>
+                    <p>Stay updated with the latest news and events happening in Vavenby.</p>
+                </div>
+                <div class="ln-row">
+                    <div class="ln-row-item">
+                        <div class="ln-item-title ln-item-part">
+                            <span class="ln-item-content">
+                                Power outage
+                            </span>
+                        </div>
+                        <div class="ln-item-text ln-item-part">
+                            <span class="ln-item-content">
+                                All of Vavenby will be without power for 2 hours on n. Please prepare accordingly.
+                            </span>
+                        </div>
+                        <div class="ln-item-dateNtime ln-item-part">
+                            <div class="ln-item-date ln-item-part">
+                                <span class="ln-item-content">
+                                    Date: n
+                                </span>
+                            </div>
+                            <div class="ln-item-time ln-item-part">
+                                <span class="ln-item-content">
+                                    From: n To: n
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ln-row-item">
+                        <div class="ln-item-title ln-item-part">
+                            <span class="ln-item-content">
+                                No Running Water
+                            </span>
+                        </div>
+                        <div class="ln-item-text ln-item-part">
+                            <span class="ln-item-content">
+                                A water main break has caused a temporary loss of running water in Vavenby. Crews are working to fix the issue.
+                            </span>
+                        </div>
+                        <div class="ln-item-dateNtime ln-item-part">
+                            <div class="ln-item-date ln-item-part">
+                                <span class="ln-item-content">
+                                    Date: n
+                                </span>
+                            </div>
+                            <div class="ln-item-time ln-item-part">
+                                <span class="ln-item-content">
+                                    From: n To: Unknown
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ln-row-item">
+                        <div class="ln-item-title ln-item-part">
+                            <span class="ln-item-content">
+                                Movie Night
+                            </span>
+                        </div>
+                        <div class="ln-item-text ln-item-part">
+                            <span class="ln-item-content">
+                                There will be a movie night at the community center on n. Join us for a fun evening with popcorn and friends!
+                            </span>
+                        </div>
+                        <div class="ln-item-dateNtime ln-item-part">
+                            <div class="ln-item-date ln-item-part">
+                                <span class="ln-item-content">
+                                    Date: n
+                                </span>
+                            </div>
+                            <div class="ln-item-time ln-item-part">
+                                <span class="ln-item-content">
+                                    From: n To: n
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ln-row-item">
+                        <div class="ln-item-title ln-item-part">
+                            <span class="ln-item-content">
+                                Wildfire Warning
+                            </span>
+                        </div>
+                        <div class="ln-item-text ln-item-part">
+                            <span class="ln-item-content">
+                                A wildfire warning has been issued for the area surrounding Vavenby. Residents are advised to stay alert and follow safety guidelines.
+                            </span>
+                        </div>
+                        <div class="ln-item-dateNtime ln-item-part">
+                            <div class="ln-item-date ln-item-part">
+                                <span class="ln-item-content">
+                                    Date: n
+                                </span>
+                            </div>
+                            <div class="ln-item-time ln-item-part">
+                                <span class="ln-item-content">
+                                    From: n To: Unknown
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
     </main>
 
     <footer>

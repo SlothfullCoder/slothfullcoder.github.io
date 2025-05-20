@@ -7,7 +7,8 @@ nav {
     z-index: 999;
 }
 
-nav button {
+nav button,
+.nav-btn {
     background-color: #388E3C;
     border: none;
     border-radius: 10px;
@@ -19,6 +20,7 @@ nav button {
     cursor: pointer;
 }
 
-nav button:hover {
+nav button:hover,
+.nav-btn:hover {
     background-color: #2c7230;
 }
