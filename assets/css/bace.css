@@ -30,7 +30,7 @@ main {
     flex: 1;
 }
 
-#main-opener {
+.main-opener {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,17 +41,16 @@ main {
     width: 100%;
 }
 
-#main-middle,
-#main-right,
-#main-left {
+.main-middle,
+.main-right,
+.main-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#main-right,
-#main-left {
+.main-side {
     flex: 1;
     max-width: 100vw;
 }
