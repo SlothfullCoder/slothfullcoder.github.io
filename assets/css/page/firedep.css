@@ -1,14 +1,180 @@
 /* Fire Department Page Styles */
-#main-middle h2 {
+.main-middle {
+    min-width: 100px;
+    width: 60vw;
+}
+
+.main-middle h2 {
     color: #d32f2f;
 }
 
-#main-middle ul {
-    list-style: disc inside;
-    margin-bottom: 2rem;
-}
-
-#main-middle h3 {
+.main-middle h3 {
     color: #388E3C;
     margin-top: 2rem;
+}
+
+header div h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wildfire-warning {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    align-items: center;
+}
+
+.wildfire-warning img {
+    width: auto;
+    height: 105px;
+    margin-right: 10px;
+}
+
+.warning-scale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid brown 5px;
+    border-radius: 10px;
+    height: fit-content;
+    background-color: brown;
+    box-shadow: black 3px 3px 10px;
+}
+
+.warning-scale-levels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: brown;
+}
+
+.scale-level {
+    padding: 5px;
+    border: black 5px solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.warning-scale-levels div:nth-child(1) {
+    background-color: rgb(62, 211, 62);
+}
+
+.warning-scale-levels div:nth-child(2) {
+    margin: 0 5px;
+    background-color: rgb(218, 218, 0);
+}
+
+.warning-scale-levels div:nth-child(3) {
+    margin-right: 5px;
+    background-color: rgb(255, 153, 0);
+}
+
+.warning-scale-levels div:nth-child(4) {
+    background-color: rgb(255, 0, 0);
+}
+
+.warning-scale-title {
+    color: white;
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 5px;
+    padding: auto;
+    background-color: black;
+    width: 100%;
+    border-radius: 5px 5px 10px 10px;
+}
+
+.warning-scale-img {
+    position: absolute;
+    top: 11px;
+    right: 230px; /* L1(337) L2(230) L3(125) L4(25) */
+}
+
+.warning-scale-img img {
+    width: auto;
+    height: 50px;
+}
+
+.firedep-header {
+    min-height: 150px;
+}
+
+.firedep-header h2 {
+    text-shadow: 3px 3px 10px #d32f2f;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cell-heading {
+    max-width: 515px;
+    width: 100%;
+    max-height: 40px;
+    text-align: center !important;
+    padding: 10px 0;
+}
+
+.cell-heading h3 {
+    margin: 0;
+}
+
+.cell,
+.cell-heading {
+    max-width: 515px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 10px 0;
+    box-shadow: #d32f2f 3px 3px 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.disc-paragraph::before {
+  content: "• ";
+  color: green; /* optional */
+  font-weight: bold;
+  padding: 0 10px 0 20px;
+}
+
+.numbered-paragraphs {
+  counter-reset: item;
+}
+
+.numbered-paragraphs .cell::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  font-weight: bold;
+  color: green; /* Optional */
+  padding: 0 10px 0 20px;
+}
+
+.department-member-list 
+.disc-paragraph::before {
+  content: "• ";
+  color: green; /* optional */
+  font-weight: bold;
+  padding: 0 10px 0 100px;
+}
+
+.fire-map-container {
+    width: 100%; 
+    height: 55vh; 
+    margin-top: 20px;
+}
+
+.cell-with-list ul {
+    list-style-type: circle;
+    padding: 0 0 0 220px;
+    margin: 0;
 }
