@@ -21,9 +21,10 @@ header div h1 {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 200px;
+    top: 15px;
     right: 10px;
     align-items: center;
+    z-index: 1000;
 }
 
 .wildfire-warning img {
@@ -271,4 +272,49 @@ header div h1 {
     background-color: #f4f4f4;
     box-shadow: #d32f2f 3px 3px 10px;
     border-radius: 10px;
+}
+
+.burning-ban {
+    margin: 0 20px 0 0;
+    background-color: transparent;
+    border: solid #d32f2f 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: #520000 3px 3px 10px;
+}
+
+.burning-ban-header{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+}
+
+.burning-ban-text div:first-of-type,
+.ban-details,
+.burning-ban-footer{
+    background-color: transparent;
+    box-shadow: #d32f2f 3px 3px 5px;
+    border-radius: 10px;
+}
+
+.burning-ban-text div:first-of-type p {
+    margin: 10px;
+}
+
+.ban-details p:first-of-type {
+    margin: 0;
+    padding: 0;
+}
+
+.short-line {
+    font-size: 5px;
+    color: transparent;
+}
+
+.burning-ban-footer p {
+    margin-bottom: 0;
 }

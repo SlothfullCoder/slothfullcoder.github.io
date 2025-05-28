@@ -11,21 +11,12 @@
     <link rel="stylesheet" href="../assets/css/buttons.css">
     <link rel="stylesheet" href="../assets/css/textbox.css">
     <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/customProperties/burningBan.css">
     <link rel="stylesheet" href="../assets/css/page/firedep.css">
     <link rel="stylesheet" href="../assets/css/mediaQueries.css">
 </head>
-<body>
-    <!-- Language Selector Button -->
-    <div class="language-dropdown">
-        <button id="languageBtn">English &#x25BC;</button>
-        <div id="languageMenu" class="language-menu">
-            <button class="lang-option" data-lang="en">English</button>
-            <button class="lang-option" data-lang="fr">Français</button>
-            <button class="lang-option" data-lang="es">Español</button>
-            <!-- Add more languages as needed -->
-        </div>
-    </div>
 
+<body>
     <div class="logo-all">
         <div id="green-circal"></div>
         <div class="logo">
@@ -122,7 +113,35 @@
                 </div>
 
             </div>
-            <div class="main-side main-right"></div>
+            <div class="main-side main-right">
+                <div class="burning-ban type-3"> <!-- Change number for diffrent category -->
+                    <div class="burning-ban-header">Burning Prohibition</div>
+                    <div class="burning-ban-text">
+                        <div>
+                        <p>
+                            <strong>Fire Prohibition:</strong> Category
+                            <span class="ban-type"></span>
+                        </p>
+                        </div>
+                        <div class="ban-details">
+                        <p>
+                            <strong>Category Details:</strong><p class="short-line"></p>
+                            <span class="ban-details1"></span><p class="short-line"></p>
+                            <span class="ban-details2"></span><p class="short-line"></p>
+                            <span class="ban-details3"></span>
+                        </p>
+                        </div>
+                    </div>
+                    <div class="burning-ban-footer">
+                        <p>
+                            Please check the
+                            <a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status"
+                                target="_blank">BC Wildfire Service</a>
+                            for updates on fire bans and wildfire conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="volunteer">
