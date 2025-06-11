@@ -29,14 +29,24 @@
         </div>
         <div></div>
     </header>
-    <nav>
+    <nav class="nav-one" aria-label="Primary navigation">
         <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='../index.html'">Home</button>
         <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='about.html'">About</button>
         <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='attractions.html'">Attractions</button>
         <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='events.html'">Events</button>
-        <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button>
-        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button> -->
         <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
+    </nav>
+
+    <nav class="nav-two" aria-label="Secondary navigation">
+        <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='../index.html'">Home</button>
+        <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='about.html'">About</button>
+        <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='attractions.html'">Attractions</button>
+        <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='events.html'">Events</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button> -->
+        <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
     </nav>
 
     <main>
@@ -111,8 +121,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div class="main-side main-right">
                 <div class="burning-ban type-3"> <!-- Change number for diffrent category -->
                     <div class="burning-ban-header">Burning Prohibition</div>
@@ -173,7 +183,7 @@
                 </div>
                  <div class="training-box">
                      <div class="firedep-image">
-                         <img src="../assets/images/firedep3.jpg" alt="Medical Support Training">
+                         <img src="../assets/images/medi-train.jpg" alt="Medical Support Training">
                      </div>
                      <div class="training-text">
                         <h3>Medical</h3>
@@ -188,13 +198,43 @@
         </div>
 
         <div class="firedep-container">
-            <div class="firedep-info">
-                <!-- What services the fire department can provide. Like Highway Rescue, Medical Administration, and Fire Protection.  -->
+            <h2>Firehall Apparatus</h2>
+            <div class="carousel">
+                <button class="arrow left" onclick="prevSlide()">&#10094;</button>
 
+                <div class="carousel-window">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Each slide -->
+                        <div class="slide">
+                            <img src="images/image1.jpg" alt="Slide 1">
+                            <p>This is image 1 description.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/image2.jpg" alt="Slide 2">
+                            <p>This is image 2 description.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/image3.jpg" alt="Slide 3">
+                            <p>This is image 3 description.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/image4.jpg" alt="Slide 4">
+                            <p>This is image 4 description.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/image5.jpg" alt="Slide 5">
+                            <p>This is image 5 description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow right" onclick="nextSlide()">&#10095;</button>
             </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+
         </div>
 
-        <div class="row-container">
+        <!-- <div class="row-container">
             <div class="column department-member-list">
                 <div class="cell-heading">
                     <h3>Department Members</h3>
@@ -207,6 +247,11 @@
                 </div>
                 <div class="cell-with-list cell">
                     <div class="disc-paragraph">
+                        <strong>Safty Officer:</strong> Doris Scarff
+                    </div>
+                </div>
+                <div class="cell-with-list cell">
+                    <div class="disc-paragraph">
                         <strong>Captains:</strong> Chris Janes
                     </div>
                     <ul>
@@ -215,11 +260,6 @@
                         <li>Gordon</li>
                         <li>Peter Bell</li>
                     </ul>
-                </div>
-                <div class="cell-with-list cell">
-                    <div class="disc-paragraph">
-                        <strong>Safty Officer:</strong> Doris Scarff
-                    </div>
                 </div>
                 <div class="cell-with-list cell">
                     <div class="disc-paragraph">
@@ -237,7 +277,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="fire-map-container">
             <iframe src="https://www.bcfiremap.com" width="100%" height="100%" style="border:0;" allowfullscreen="" title="wildfire-map"></iframe>
@@ -292,5 +332,6 @@
 
     <div id="nav-desc-tooltip" class="nav-desc-tooltip" style="display:none;"></div>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/firedep.js"></script>
 </body>
 </html>

@@ -15,18 +15,6 @@
     <link rel="stylesheet" href="../assets/css/mediaQueries.css">
 </head>
 <body>
-    <!-- Language Selector Button -->
-    <div class="language-dropdown">
-        <button id="languageBtn">English &#x25BC;</button>
-        <div id="languageMenu" class="language-menu">
-            <button class="lang-option" data-lang="en">English</button>
-            <button class="lang-option" data-lang="fr">Français</button>
-            <button class="lang-option" data-lang="es">Español</button>
-            <!-- Add more languages as needed -->
-        </div>
-    </div>
-
-    <!-- <div id="line"></div> -->
     <div class="logo-all">
         <div id="green-circal"></div>
         <div class="logo">
@@ -39,20 +27,30 @@
         </div>
         <div></div>
     </header>
-    <nav>
+    <nav class="nav-one" aria-label="Primary navigation">
         <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='../index.html'">Home</button>
         <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='about.html'">About</button>
         <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='attractions.html'">Attractions</button>
         <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='events.html'">Events</button>
-        <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button>
-        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button> -->
         <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
+    </nav>
+
+    <nav class="nav-two" aria-label="Secondary navigation">
+        <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='../index.html'">Home</button>
+        <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='about.html'">About</button>
+        <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='attractions.html'">Attractions</button>
+        <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='events.html'">Events</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='businesses.html'">Businesses & Services</button> -->
+        <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='contact.html'">Contact</button>
     </nav>
     <main>
         <div class="main-opener">
             <div class="main-side main-left"></div>
             <div class="main-middle">
-                <h2>Local Businesses & Services</h2>
+                <h2>Vavenby's Local Businesses & Services</h2>
                 <p>Welcome to the Vavenby business directory! Here you can find a list of local businesses and services available in our town.</p>
                 <ul>
                     <li>Business 1 - Description</li>

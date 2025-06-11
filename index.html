@@ -15,18 +15,6 @@
     <link rel="stylesheet" href="./assets/css/mediaQueries.css">
 </head>
 <body>
-    <!-- Language Selector Button -->
-    <div class="language-dropdown">
-        <button id="languageBtn">English &#x25BC;</button>
-        <div id="languageMenu" class="language-menu">
-            <button class="lang-option" data-lang="en">English</button>
-            <button class="lang-option" data-lang="fr">Français</button>
-            <button class="lang-option" data-lang="es">Español</button>
-            <!-- Add more languages as needed -->
-        </div>
-    </div>
-
-    <!-- <div id="line"></div> -->
     <div class="logo-all">
         <div id="green-circal"></div>
         <div class="logo">
@@ -39,14 +27,24 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="nav-one" aria-label="Primary navigation">
         <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='index.html'">Home</button>
         <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='./pages/about.html'">About</button>
         <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='./pages/attractions.html'">Attractions</button>
         <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='./pages/events.html'">Events</button>
-        <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='./pages/businesses.html'">Businesses & Services</button>
-        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='./pages/contact.html'">Contact</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='./pages/businesses.html'">Businesses & Services</button> -->
         <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='./pages/firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='./pages/contact.html'">Contact</button>
+    </nav>
+
+    <nav class="nav-two" aria-label="Secondary navigation">
+        <button class="nav-btn" data-desc="Return to the main page." onclick="window.location.href='index.html'">Home</button>
+        <button class="nav-btn" data-desc="Information about the town and its history." onclick="window.location.href='./pages/about.html'">About</button>
+        <button class="nav-btn" data-desc="See local sights and things to do." onclick="window.location.href='./pages/attractions.html'">Attractions</button>
+        <button class="nav-btn" data-desc="Find out what's happening in town." onclick="window.location.href='./pages/events.html'">Events</button>
+        <!-- <button class="nav-btn" data-desc="Local shops and services." onclick="window.location.href='./pages/businesses.html'">Businesses & Services</button> -->
+        <button class="nav-btn" data-desc="Learn about the Vavenby Fire Department." onclick="window.location.href='./pages/firedep.html'">Fire Department</button>
+        <button class="nav-btn" data-desc="How to get in touch with us." onclick="window.location.href='./pages/contact.html'">Contact</button>
     </nav>
 
     <main>
@@ -61,8 +59,7 @@
     
                 <!-- Intro pragraph about the town -->
                 <div class="intro-paragraph">
-                    <p>Vavenby, British Columbia, is a small, rural community located along the North Thompson River in Canada. Known for its scenic beauty, Vavenby is surrounded by forests, mountains, and abundant wildlife, making it a great spot for outdoor activities like fishing, hiking, and camping. The town has a rich history tied to forestry and agriculture, with a close-knit community that values its natural surroundings. While small, Vavenby serves as a gateway to nearby Wells Gray Provincial Park and offers a peaceful lifestyle for residents and visitors alike.</p>
-                                    
+                    <p>Vavenby, British Columbia, is a small, rural community located along the North Thompson River in Canada. Known for its scenic beauty, Vavenby is surrounded by forests, mountains, and abundant wildlife, making it a great spot for outdoor activities like fishing, hiking, and camping. The town has a rich history tied to forestry and agriculture, with a close-knit community that values its natural surroundings. While small, Vavenby serves as a gateway to nearby Wells Gray Provincial Park and offers a peaceful lifestyle for residents and visitors alike.</p>      
                 </div>
             </div>
             <div class="main-side main-right"></div>
@@ -79,7 +76,7 @@
                     <div class="ln-row-item">
                         <div class="ln-item-title ln-item-part">
                             <span class="ln-item-content">
-                                Power outage
+                                Power Outage
                             </span>
                         </div>
                         <div class="ln-item-text ln-item-part">

@@ -1,10 +1,27 @@
 /* Nav Stuff */
-nav {
+nav.nav-one {
+    display: none;
+    background: #388E3C;
+    padding: 1rem 0;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-two {
     background: #388E3C;
     padding: 1rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 998;
+}
+
+nav.fixed-nav {
+    display: block;
+    justify-self: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #388E3C;
 }
 
 nav button,
