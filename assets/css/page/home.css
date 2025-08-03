@@ -81,7 +81,6 @@
     padding-left: 24px;
     border-left: 2px solid #388E3C;
     position: relative;
-    transition-behavior: normal;
     transition-duration: 0.2s;
 }
 
