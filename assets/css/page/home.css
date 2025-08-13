@@ -48,7 +48,7 @@
     flex-wrap: wrap;
     gap: 0 64px;
     margin-bottom: 24px;
-    
+
 }
 
 .ln-header h2 {
@@ -75,8 +75,10 @@
 .ln-row-item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* default, but explicit */
-    height: 100%; /* ensures it fills the grid cell */
+    justify-content: flex-start;
+    /* default, but explicit */
+    height: 100%;
+    /* ensures it fills the grid cell */
     text-align: left;
     padding-left: 24px;
     border-left: 2px solid #388E3C;

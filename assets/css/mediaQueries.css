@@ -1,5 +1,6 @@
 /* Media Queries */
 @media screen and (max-width: 375px) {
+
     /* Header */
     header {
         flex-direction: column;
@@ -73,7 +74,7 @@
         align-items: center;
     }
 
-    #social-boxes > div {
+    #social-boxes>div {
         margin-bottom: 10px;
     }
 }

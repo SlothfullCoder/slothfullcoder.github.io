@@ -13,7 +13,8 @@ body {
     color: #333;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -79,7 +80,7 @@ main {
     color: #222;
     border-radius: 8px;
     padding: 8px 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     font-size: 1.1rem;
     pointer-events: none;
     z-index: 9999;
@@ -87,4 +88,14 @@ main {
     opacity: 0.97;
     max-width: 250px;
     white-space: pre-line;
+}
+
+.error-container {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    font-size: 2rem;
 }

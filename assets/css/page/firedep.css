@@ -53,7 +53,7 @@ main h3 {
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    
+
 }
 
 .warning-scale-levels div:nth-child(1) {
@@ -80,7 +80,6 @@ main h3 {
     font-size: 4.5rem;
     text-align: center;
     margin-top: 5px;
-    padding: auto;
     background-color: black;
     width: 100%;
     border-radius: 5px 5px 10px 10px;
@@ -89,7 +88,8 @@ main h3 {
 .warning-scale-img {
     position: absolute;
     top: 11px;
-    right: 230px; /* L1(337) L2(230) L3(125) L4(25) */
+    right: 230px;
+    /* L1(337) L2(230) L3(125) L4(25) */
 }
 
 .warning-scale-img img {
@@ -134,35 +134,37 @@ main h3 {
 }
 
 .disc-paragraph::before {
-  content: "• ";
-  color: green; /* optional */
-  font-weight: bold;
-  padding: 0 10px 0 20px;
+    content: "• ";
+    color: green;
+    /* optional */
+    font-weight: bold;
+    padding: 0 10px 0 20px;
 }
 
 .numbered-paragraphs {
-  counter-reset: item;
+    counter-reset: item;
 }
 
 .numbered-paragraphs .cell::before {
-  counter-increment: item;
-  content: counter(item) ". ";
-  font-weight: bold;
-  color: green; /* Optional */
-  padding: 0 10px 0 20px;
+    counter-increment: item;
+    content: counter(item) ". ";
+    font-weight: bold;
+    color: green;
+    /* Optional */
+    padding: 0 10px 0 20px;
 }
 
-.department-member-list 
-.disc-paragraph::before {
-  content: "• ";
-  color: green; /* optional */
-  font-weight: bold;
-  padding: 0 10px 0 100px;
+.department-member-list .disc-paragraph::before {
+    content: "• ";
+    color: green;
+    /* optional */
+    font-weight: bold;
+    padding: 0 10px 0 100px;
 }
 
 .fire-map-container {
-    width: 100%; 
-    height: 55vh; 
+    width: 100%;
+    height: 55vh;
     margin-top: 20px;
 }
 
@@ -255,7 +257,7 @@ main h3 {
     right: 0;
 }
 
-.volunteer > p {
+.volunteer>p {
     margin-top: 35px;
     padding: 10px;
     color: #333;
@@ -275,12 +277,11 @@ main h3 {
     box-shadow: #520000 3px 3px 10px;
 }
 
-.burning-ban-header{
+.burning-ban-header {
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    padding: auto;
     width: 100%;
     background: transparent;
     padding-top: 5px;
@@ -288,7 +289,7 @@ main h3 {
 
 .burning-ban-text div:first-of-type,
 .ban-details,
-.burning-ban-footer{
+.burning-ban-footer {
     background-color: transparent;
     box-shadow: #d32f2f 3px 3px 5px;
     border-radius: 10px;
@@ -328,7 +329,7 @@ main h3 {
     position: relative;
     background: #f5f5f5;
     border-radius: 12px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -359,11 +360,11 @@ main h3 {
 .slide img {
     height: 100%;
     max-height: 600px;
-    width: 100%;
+    width: 50%;
     max-width: 1500px;
     display: block;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     object-fit: cover;
 }
 

@@ -28,7 +28,7 @@ footer a:hover {
     justify-content: center;
 }
 
-#social-links > div > h3 {
+#social-links>div>h3 {
     margin-bottom: 0;
 }
 
@@ -37,15 +37,15 @@ footer a:hover {
     justify-content: center;
 }
 
-#social-boxes > div > ul * {
+#social-boxes>div>ul * {
     text-align: left;
     margin: 0.5px 0;
 }
 
-footer > .quick-links > h3 {
+footer>.quick-links>h3 {
     margin: 10px 0 5px;
 }
 
-footer > .quick-links > a {
+footer>.quick-links>a {
     padding: 0 5px;
 }

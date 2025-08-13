@@ -1,7 +1,7 @@
 .burning-ban {
-  /* set defaults just in case */
-  --ban-type: "—";
-  --ban-details1: "No ban data available.";
+    /* set defaults just in case */
+    --ban-type: "—";
+    --ban-details1: "No ban data available.";
 }
 
 /* Level 1 */
@@ -42,9 +42,11 @@
 .ban-details1::before {
     content: var(--ban-details1);
 }
+
 .ban-details2::before {
     content: var(--ban-details2);
 }
+
 .ban-details3::before {
     content: var(--ban-details3);
 }
